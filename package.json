@@ -1,0 +1,25 @@
+{
+  "name": "gkfitzfitnesstracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GKFitz/GKFitzFitnessTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GKFitz/GKFitzFitnessTracker/issues"
+  },
+  "homepage": "https://github.com/GKFitz/GKFitzFitnessTracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.12.3",
+    "morgan": "^1.10.0"
+  }
+}
