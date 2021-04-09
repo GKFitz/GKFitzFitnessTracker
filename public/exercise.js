@@ -21,10 +21,12 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
+    //saved and logged to console
     workout = await API.createWorkout()
     console.log(workout)
   }
   if (workout) {
+    //this expects an object with _id
     location.search = "?id=" + workout._id;
   }
 
