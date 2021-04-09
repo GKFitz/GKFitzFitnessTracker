@@ -5,7 +5,7 @@ const Workout= require("../models/workout.js");
 //this expects to return the last workout. get the last workout from database
 //return an array for which the last element in the array is the most recent workout
 //model get last 7 work outs is needed in model folder
-//sending arrays
+//sending arrays, exercises go into workouts
 router.get("/api/workouts", (req, res) => {
    
 
