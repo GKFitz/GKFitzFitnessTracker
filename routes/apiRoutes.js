@@ -22,16 +22,20 @@ router.get("/api/workouts", (req, res) => {
 //takes an ID from an existing work out
 //server res is ignored by the front end
 router.put("/api/workouts/:id", (req, res) => {
-    Workout.findByIdAndUpdate(req.params.id, {$add: {exercises: req.body}})
-    .then(dbWorkout => {
-        res.json(dbWorkout)
-    })
-    .catch((err) => {
-        res.status(400).json(err)
-    })
-
-
+    Workout.findByIdAndUpdate(
+        req.params.id,
+    { $push: { exercises: req.body } },
+    { new: true }
+  ).then((dbWorkout) => {
+        res.json(dbWorkout);
+      }).catch(err => {
+        res.status(400).json(err);
+    });
+  
 });
+
+
+
 
 //does not have an id, this intends to auto generate an id
 //Sending a JSON objectthis expects an return object with _id property
@@ -52,6 +56,7 @@ router.post("/api/workouts", (req, res) => {
 router.get("/api/workouts/range", (req, res) => {
     Workout.find({})
     .sort({ date: -1 })
+    .limit(7)
     .then(dbWorkout => {
         res.json(dbWorkout);
     })
