@@ -7,7 +7,13 @@ const Workout= require("../models/workout.js");
 //model get last 7 work outs is needed in model folder
 //sending arrays, exercises go into workouts
 router.get("/api/workouts", (req, res) => {
-   
+    Workout.find({})
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
 
 });
 
