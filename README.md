@@ -2,7 +2,7 @@
 GKF MongoDB Fitness Tracker
 
 ## Description
-This applicationis a  workout logger that takes in new exercises and uses MongoDB with Mongoose to log them to the database in which the last 7 workouts can then be conpiled and analyzed in the app's dashboard. This assignment required that the exercise model be built for Mongo DB formatting to ensure the correct logging of the various fields in the application. There are two types of workouts avaialble, resistance and cardio, which takes in different requried fields such as reps, resistence and miles for cardio. But it does add together the total time duration between the all exercises.
+This application is a  workout logger that takes in new exercises and uses MongoDB with Mongoose to log them to the database in which the last 7 workouts can then be conpiled and analyzed in the app's dashboard. This assignment required that the exercise model be built for Mongo DB formatting to ensure the correct logging of the various fields in the application. There are two types of workouts avaialble, resistance and cardio, which takes in different requried fields such as reps, resistence and miles for cardio. But it does add together the total time duration between the all exercises.
 
 
 ## License
@@ -10,6 +10,9 @@ This applicationis a  workout logger that takes in new exercises and uses MongoD
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ##Screenshot
+![image](https://user-images.githubusercontent.com/73301331/114220346-df17da00-9939-11eb-848a-3f42e8ca1e70.png)
+
+![image](https://user-images.githubusercontent.com/73301331/114220372-ea6b0580-9939-11eb-94fc-cf4a88c868bc.png)
 
 
 ## Table of Contents
@@ -41,4 +44,4 @@ If anyone has any questions about this app, please contact me via GitHub or emai
 
 #Email: [gkf2103@gmail.com](gkf2103@gmail.com)
 
-#Link:
+#Link:https://immense-inlet-71906.herokuapp.com/?id=60708dbd74d6f20015248303
