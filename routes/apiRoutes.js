@@ -38,7 +38,14 @@ router.post("/api/workouts", (req, res) => {
 //return the seven most recent workout as a json doc
 //sending arrays
 router.get("/api/workouts/range", (req, res) => {
-
+    Workout.find({})
+    .sort({ date: -1 })
+    .then(dbWorkout => {
+        res.json(dbWorkout);
+    })
+    .catch(err => {
+        res.status(400).json(err);
+    });
 
 
 });
