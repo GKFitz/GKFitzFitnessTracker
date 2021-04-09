@@ -30,7 +30,7 @@ router.put("/api/workouts/:id", (req, res) => {
 //does not have an id, this intends to auto generate an id
 //Sending a JSON objectthis expects an return object with _id property
 router.post("/api/workouts", (req, res) => {
-   
+    
 
 });
 
